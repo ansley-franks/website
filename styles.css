@@ -1,0 +1,206 @@
+/*
+COLOR PALETTE
+https://coolors.co/f1f2eb-d8dad3-a4c2a5-566246-4a4a48
+#F1F2EB -- ALABASTER 
+#D8DAD3 -- TIMBERWOLF
+#A4C2A5 -- CAMBRIDGE BLUE 
+#566246 -- EBONY
+#4A4A48 -- DAVYS GREY
+
+#343434 -- DARK GRAY -- ALMOST BLACK
+*/
+
+/* GLOBAL STYLES 
+-------------------------------*/
+html {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    color: #4A4A48;
+    font-size: 15px;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    color:#4A4A48;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a {
+    color: #F1F2EB; 
+}
+a:hover {
+    text-decoration: none;
+}
+h1 {
+    font-size: 100px;
+    line-height: 1;
+}
+h1, h2 {
+    font-family: 'Cookie', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+h2 {
+    font-size: 45px;
+}
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+h3 {
+    margin-bottom: 0px;
+}
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0px;
+}
+.divider > section {
+    overflow: hidden;
+    border-bottom: 1px dashed #4A4A48;
+    padding: 20px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
+/* PROFILE
+-------------------------------*/
+header {
+    background: #A4C2A5;
+}
+
+/* PROJECTS
+-------------------------------*/
+.projects {
+    background: #F1F2EB;
+}
+.projects a {
+    color: #F1F2EB ;
+    background: #4A4A48;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.projects a:hover {
+    background: rgba(74, 74, 72, 80%);
+}
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #4A4A48;
+    padding: 20px 0;
+}
+.project-item h3 {
+    margin-top: 0;
+}
+
+
+/* WORK EXPERIENCE
+-------------------------------*/
+.experience {
+    background: #A4C2A5;
+}
+.experience2 {
+    background: #F1F2EB;
+}
+
+/* EDUCATION
+-------------------------------*/
+.education {
+    background: #F1F2EB;
+}
+.education p {
+    width: 60%;
+}
+
+/* CONTACT INFO
+-------------------------------*/
+footer {
+    background: #4A4A48;
+    color: #F1F2EB;
+}
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.contact-list a {
+    padding: 15px;
+    display: inline-block;
+}
+.contact-page {
+    background-color: #F1F2EB;
+}
+/* RESPONSIVE STYLES
+-------------------------------*/
+@media screen and (min-width: 750px) {
+    header, footer {
+        text-align: center;
+    }
+
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+        margin-bottom: 20px;
+    }
+    h1, h2 {
+        line-height: 1.1;
+    }
+    .contact-list {
+        padding: 5px;
+    }
+.contact-page a {
+    color: #4A4A48;
+    background: #4A4A48;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+.contact-page a:hover {
+    background: rgba(74, 74, 72, 80%);
+}
+.contact-page-item h3 {
+    margin-top: 0;
+}
+
+}
