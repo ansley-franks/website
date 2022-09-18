@@ -22,7 +22,7 @@ html {
     list-style: none
 }
 nav ul {
-    float: right;
+    float: left;
     margin-right: 20px;
 }
 nav ul li {
